@@ -4,3 +4,50 @@
 
 /* Floating customer support chatbot */
 .chat-widget{position:fixed;right:18px;bottom:18px;z-index:60;font-family:var(--font)}.chat-launcher{display:flex;align-items:center;gap:9px;min-height:52px;padding:0 17px 0 12px;border:1px solid var(--ink);border-radius:30px;background:var(--ink);color:#fff;box-shadow:0 8px 25px #0002;font-size:12px;font-weight:700}.chat-launcher-icon{display:grid;place-items:center;width:29px;height:29px;border-radius:50%;background:var(--lime);color:var(--ink);font-size:18px}.chat-unread-dot{width:6px;height:6px;background:var(--lime);border-radius:50%}.chat-launcher-open .chat-unread-dot{display:none}.chat-panel{position:absolute;right:0;bottom:64px;width:min(360px,calc(100vw - 28px));height:min(510px,calc(100dvh - 115px));min-height:340px;display:flex;flex-direction:column;overflow:hidden;background:#f5f6f5;border:1px solid #dce0dd;border-radius:12px;box-shadow:0 18px 60px #0003}.chat-panel.hidden{display:none!important}.chat-header{display:flex;align-items:center;gap:10px;padding:15px;background:var(--ink);color:white}.chat-avatar{width:35px;height:35px;display:grid;place-items:center;background:var(--lime);color:var(--ink);font-family:var(--display);font-weight:800;border-radius:50%}.chat-heading{flex:1}.chat-heading strong,.chat-heading span{display:block}.chat-heading strong{font-size:12px}.chat-heading span{margin-top:4px;font-size:10px;color:#d3d7d3}.chat-heading i{display:inline-block;width:6px;height:6px;background:#d7ff64;border-radius:50%;margin-right:4px}.chat-close{border:0;background:transparent;color:white;font-size:25px;padding:0 4px}.chat-messages{flex:1;overflow:auto;padding:15px;display:flex;flex-direction:column;gap:10px}.chat-message{max-width:90%;white-space:pre-line;overflow-wrap:anywhere;font-size:11px;line-height:1.65;padding:11px 12px;border-radius:9px}.bot-message{align-self:flex-start;background:white;border:1px solid #e1e4e2;color:var(--ink);border-bottom-left-radius:2px}.user-message{align-self:flex-end;background:var(--ink);color:white;border-bottom-right-radius:2px}.chat-quick-replies{display:flex;flex-wrap:wrap;gap:6px;padding:0 12px 10px}.chat-quick-replies button{background:transparent;border:1px solid #cbd1cd;border-radius:20px;padding:7px 9px;font-size:9px;color:#333}.chat-quick-replies button:hover{background:#e5e9e7}.chat-compose{display:flex;gap:8px;padding:11px;border-top:1px solid #dfe3e0;background:white}.chat-compose input{min-width:0;flex:1;border:0;outline:0;background:transparent;font-size:12px}.chat-compose button{width:34px;height:34px;border:0;background:var(--ink);color:white;border-radius:50%;font-size:18px}.chat-disclaimer{text-align:center;font-size:8px;color:#858a87;padding:0 8px 9px;background:white}@media(max-width:640px){.chat-widget{right:12px;bottom:12px}.chat-launcher{min-height:48px}.chat-panel{bottom:59px;right:0;width:min(360px,calc(100vw - 24px));height:min(500px,calc(100dvh - 95px))}}
+
+/* Clean, calmer browsing experience */
+:root{--paper:#f7f8f7;--line:#e5e8e5;--muted:#737975;--radius:10px}
+body{font-size:14px;background:#fbfcfb;color:#171917}
+.site-header{height:76px;padding:0 clamp(18px,5.5%,76px);background:#fbfcfb;border-bottom:1px solid #eceeec}
+.brand{font-size:21px;gap:8px}.brand-mark{width:30px;height:30px}
+.desktop-nav{gap:28px;margin-left:25px}.desktop-nav a{font-size:13px}
+.header-actions{gap:12px}.location-pill{background:#fff;border-color:#e2e5e2}
+.hero{min-height:490px;padding:54px clamp(22px,8.5%,110px) 48px;gap:6%;background:#fbfcfb}
+.hero h1{font-size:clamp(48px,5.5vw,76px);letter-spacing:-3.5px;margin:22px 0 18px}
+.hero-description{font-size:14px;line-height:1.8;max-width:370px}
+.hero-proof{margin-top:28px}
+.hero-image-wrap{height:360px;overflow:hidden;border-radius:8px}
+.image-label{inset:auto 22px 20px}.image-label strong{font-size:30px}
+.hero-vertical-text{right:-3px}
+.booking-search{padding:42px clamp(22px,8.5%,110px) 28px;background:#f1f3f1}
+.search-heading h2,.section-heading-row h2,.steps-intro h2,.salon-owner-section h2{font-size:clamp(27px,3vw,36px);letter-spacing:-1.2px}
+.search-controls{grid-template-columns:minmax(220px,2fr) minmax(130px,1fr) minmax(115px,.85fr) auto;gap:9px;margin-top:22px}
+.search-field,.select-field{height:54px;border-radius:6px;border-color:#e3e6e3}
+.search-submit{border-radius:6px;padding:0 16px}
+.filter-chip{padding:8px 13px;border-radius:24px;background:#fff}
+.salons-section{padding:58px clamp(22px,8.5%,110px) 66px;background:#fbfcfb}
+.section-heading-row{margin-bottom:22px}
+.section-heading-row p{font-size:13px}
+.salon-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.salon-card{border-radius:9px;overflow:hidden;border-color:#e8eae8;box-shadow:0 2px 8px #11100004}
+.salon-card:hover{transform:translateY(-2px);box-shadow:0 10px 26px #0000000a}
+.salon-image{height:190px}
+.salon-info{padding:16px}
+.salon-title-row h3{font-size:17px;line-height:1.35}
+.salon-location{margin:7px 0 12px;font-size:11px}
+.meta-pill{border-radius:4px;background:#f3f5f3;padding:7px 8px}
+.salon-services{margin-top:14px;padding-top:13px}
+.book-button{border-radius:5px;padding:11px 12px}
+.steps-section{padding:62px clamp(22px,8.5%,110px);background:#f1f3f1}
+.step-list{border-top:1px solid #dfe3df}
+.step-item{padding:22px 0;grid-template-columns:35px 42px 1fr 20px;gap:14px}
+.step-icon{border-radius:8px;background:#fff}
+.salon-owner-section{margin:54px clamp(22px,8.5%,110px);padding:36px;border-radius:10px;background:#eff2ee;gap:25px}
+.owner-mark{border-radius:9px;background:#fff}
+.primary-button,.secondary-button,.text-link,.search-submit,.book-button{transition:background .18s,border-color .18s,transform .18s}
+.primary-button,.secondary-button{border-radius:5px}
+.site-footer{padding:27px clamp(22px,5.5%,76px);background:#fbfcfb}
+.modal-card{border-radius:12px}
+@media(max-width:1050px){.salon-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.search-controls{grid-template-columns:minmax(180px,2fr) 1fr 1fr}.search-submit{grid-column:1/-1;min-height:46px;justify-content:space-between}.hero{padding-left:5.5%;padding-right:5.5%}.booking-search,.salons-section,.steps-section{padding-left:5.5%;padding-right:5.5%}}
+@media(max-width:700px){.site-header{height:68px;padding:0 17px;gap:10px}.brand{font-size:19px}.brand-mark{width:27px;height:27px}.desktop-nav{display:none}.mobile-menu{display:grid;order:-1;width:34px;height:34px}.header-actions{gap:7px}.location-pill{padding:8px 10px;font-size:11px}.sign-in{font-size:11px}.avatar-button{width:32px;height:32px}.hero{grid-template-columns:1fr;gap:24px;padding:38px 20px 48px;min-height:0}.hero h1{font-size:clamp(48px,12vw,66px);letter-spacing:-2.8px;margin:18px 0}.hero-description{font-size:13px;max-width:500px}.hero-proof{margin-top:22px}.hero-visual{justify-self:stretch;max-width:none;padding:0 8px 0 0}.hero-image-wrap{height:clamp(245px,68vw,350px)}.hero-vertical-text{right:-7px;font-size:7px}.hero-index{bottom:14px;left:20px}.booking-search{padding:34px 20px 25px}.search-controls{grid-template-columns:1fr 1fr;margin-top:18px;gap:8px}.search-field{grid-column:1/-1}.select-field{height:54px}.search-submit{grid-column:1/-1;min-height:48px}.quick-filters{gap:6px}.quick-filters>span:first-child{width:100%;margin-bottom:2px}.filter-chip{font-size:10px;padding:8px 11px}.results-count{width:100%;margin:6px 0 0}.salons-section{padding:43px 20px 48px}.section-heading-row{align-items:flex-start;gap:12px}.section-heading-row h2{font-size:29px}.section-heading-row p{font-size:12px}.text-link{font-size:10px;white-space:nowrap;margin-top:18px}.salon-grid{grid-template-columns:1fr;gap:14px}.salon-image{height:210px}.salon-info{padding:16px}.steps-section{padding:43px 20px}.steps-intro h2{font-size:31px}.step-item{grid-template-columns:26px 38px 1fr 14px;gap:10px;padding:18px 0}.step-item h3{font-size:14px}.step-item p{font-size:11px}.salon-owner-section{margin:28px 20px;padding:24px;grid-template-columns:40px 1fr;gap:16px}.salon-owner-section h2{font-size:27px}.owner-button{grid-column:1/-1;width:100%}.site-footer{padding:23px 20px;gap:16px;flex-wrap:wrap}.site-footer>span{display:none}.site-footer>div{width:100%;justify-content:space-between}.site-footer>div span{margin-left:auto}.modal-card{width:calc(100% - 24px);max-height:88dvh;border-radius:10px}.chat-widget{right:12px;bottom:12px}}
+@media(min-width:701px) and (max-width:900px){.hero{min-height:440px}.hero-image-wrap{height:310px}.hero h1{font-size:54px}.desktop-nav{gap:17px;margin-left:5px}.location-pill{padding:8px 9px}.header-actions{gap:8px}.brand{font-size:20px}}
