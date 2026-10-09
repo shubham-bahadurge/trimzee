@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f0f2f2" />
+  <meta name="description" content="Find your next great haircut. Discover trusted salons and book your preferred stylist in Pune with Trimzee." />
+  <title>Trimzee — Your style, on your time</title>
+  <link rel="icon" href="assets/trimzee-mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> GOOD HAIR DAYS START HERE <span class="announcement-right">PUNE, INDIA ↗</span></div>
+  <header class="site-header">
+    <button class="icon-button mobile-menu" id="menuButton" aria-label="Open menu"><span class="hamburger"></span></button>
+    <a class="brand" href="#" aria-label="Trimzee home">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M5 7h38v8H26.5C17.7 15 12 21.1 12 30v11H4V29c0-9.2 4.4-16.4 12.4-20H5z"/><path d="M43 5c-1 13-7 20-19 23 5-8 10-15 19-23z"/></svg>
+      <span>TRIMZEE<span class="brand-period">.</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#discover">Discover</a><a href="#how-it-works">How it works</a><a href="#for-salons">For salons</a>
+    </nav>
+    <div class="header-actions">
+      <button class="location-pill" id="locationButton"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Pune</span><span class="chevron">⌄</span></button>
+      <button class="sign-in" id="signInButton">Sign in</button>
+      <button class="avatar-button" id="accountButton" aria-label="Account"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.5-4 3-6 7-6s6.5 2 7 6"/></svg></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> YOUR NEXT FRESH LOOK</div>
+        <h1>Look sharp.<br><span>Feel like you.</span></h1>
+        <p class="hero-description">Your favourite chair is closer than you think. Find great salons, choose your stylist, and book a time that works for you.</p>
+        <a class="primary-button hero-cta" href="#discover">Find your trim <span>↗</span></a>
+        <div class="hero-proof"><div class="proof-avatars"><span>R</span><span>A</span><span>S</span></div><div><strong>Your city. Your style.</strong><small>Made for Pune, one fresh cut at a time.</small></div></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrap"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=85" alt="Modern barbershop with barber chairs" /><div class="image-shade"></div>
+          <div class="image-label"><span class="label-kicker">THE TRIMZEE EDIT</span><strong>Fresh cut.<br>Fresh start.</strong><span class="label-bottom">YOUR STYLE, ON YOUR TIME <span>↗</span></span></div>
+          <div class="floating-card"><div class="floating-icon">✦</div><div><strong>Book your way</strong><span>Pick your salon & stylist</span></div><span class="floating-arrow">↗</span></div>
+        </div>
+        <div class="hero-vertical-text">STYLE IS PERSONAL — SO IS YOUR BOOKING.</div>
+      </div>
+      <div class="hero-index">01 <span>/</span> 03</div>
+    </section>
+
+    <section class="booking-search" id="discover">
+      <div class="search-heading"><span class="section-kicker">THE GOOD STUFF IS NEARBY</span><h2>Find your kind of salon.</h2></div>
+      <div class="search-controls">
+        <label class="search-field"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg><input id="searchInput" type="search" placeholder="Salon, area or service..." aria-label="Search salon, area or service" /><kbd>⌘ K</kbd></label>
+        <label class="select-field"><span>LOOKING FOR</span><select id="serviceFilter" aria-label="Choose service"><option value="all">All services</option><option value="haircut">Haircut</option><option value="beard">Beard & shave</option><option value="color">Hair colour</option><option value="spa">Hair spa</option></select></label>
+        <label class="select-field"><span>FOR</span><select id="audienceFilter" aria-label="Choose category"><option value="all">Everyone</option><option value="men">Men</option><option value="women">Women</option><option value="unisex">Unisex</option></select></label>
+        <button class="search-submit" id="searchButton">Find salons <span>↗</span></button>
+      </div>
+      <div class="quick-filters"><span>POPULAR:</span><button class="filter-chip active" data-quick="all">All salons</button><button class="filter-chip" data-quick="top">Top rated</button><button class="filter-chip" data-quick="budget">Under ₹500</button><button class="filter-chip" data-quick="open">Open today</button><span class="results-count" id="resultsCount">2 salons to explore</span></div>
+    </section>
+
+    <section class="salons-section">
+      <div class="section-heading-row"><div><span class="section-kicker">HANDPICKED FOR YOU</span><h2>Good cuts. Great people.</h2><p>Discover your next go-to spot around Pune.</p></div><button class="text-link" id="viewAllButton">View all salons <span>↗</span></button></div>
+      <div class="salon-grid" id="salonGrid" aria-live="polite"></div>
+      <div class="empty-state hidden" id="emptyState"><div class="empty-icon">⌕</div><h3>No salons found just yet.</h3><p>Try a different search or clear your filters.</p><button class="secondary-button" id="clearFilters">Clear filters</button></div>
+    </section>
+
+    <section class="steps-section" id="how-it-works"><div class="steps-intro"><span class="section-kicker">NO CALLS. NO WAITING.</span><h2>Your next cut<br>in three easy steps.</h2><p>More time for you. Less time figuring it out.</p></div><div class="step-list"><article class="step-item"><span class="step-number">01</span><div class="step-icon">⌕</div><div><h3>Find your spot</h3><p>Browse salons by location, service, budget, and reviews.</p></div><span class="step-arrow">↗</span></article><article class="step-item"><span class="step-number">02</span><div class="step-icon">✂</div><div><h3>Choose your stylist</h3><p>See who's available and pick the person you trust with your look.</p></div><span class="step-arrow">↗</span></article><article class="step-item"><span class="step-number">03</span><div class="step-icon">◷</div><div><h3>Book. Show up. Glow.</h3><p>Choose your time and pay online or at the salon.</p></div><span class="step-arrow">↗</span></article></div></section>
+
+    <section class="salon-owner-section" id="for-salons"><div class="owner-mark"><svg viewBox="0 0 48 48"><path d="M5 7h38v8H26.5C17.7 15 12 21.1 12 30v11H4V29c0-9.2 4.4-16.4 12.4-20H5z"/><path d="M43 5c-1 13-7 20-19 23 5-8 10-15 19-23z"/></svg></div><div><span class="section-kicker">HEY, SALON OWNERS</span><h2>More bookings.<br>Less empty chairs.</h2><p>Put your salon in front of people who are ready for their next look.</p></div><button class="primary-button owner-button" id="listSalonButton">List your salon <span>↗</span></button></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#"><svg class="brand-mark" viewBox="0 0 48 48"><path d="M5 7h38v8H26.5C17.7 15 12 21.1 12 30v11H4V29c0-9.2 4.4-16.4 12.4-20H5z"/><path d="M43 5c-1 13-7 20-19 23 5-8 10-15 19-23z"/></svg><span>TRIMZEE<span class="brand-period">.</span></span></a><span>GOOD HAIR DAYS START HERE.</span><div><button id="bookingsButton">My bookings</button><button id="supportButton">Support</button><span>© 2026 Trimzee</span></div></footer>
+
+  <div class="modal-backdrop hidden" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card"><button class="modal-close" id="modalClose" aria-label="Close dialog">×</button><div class="modal-content" id="modalContent"></div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
