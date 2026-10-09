@@ -72,6 +72,16 @@
 
   <div class="modal-backdrop hidden" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card"><button class="modal-close" id="modalClose" aria-label="Close dialog">×</button><div class="modal-content" id="modalContent"></div></div></div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <section class="chat-widget" id="chatWidget" aria-label="Trimzee customer support chat">
+    <button class="chat-launcher" id="chatLauncher" aria-expanded="false" aria-controls="chatPanel" aria-label="Open Trimzee support chat"><span class="chat-launcher-icon">✦</span><span class="chat-launcher-label">Help</span><span class="chat-unread-dot"></span></button>
+    <div class="chat-panel hidden" id="chatPanel" role="dialog" aria-label="Trimzee support assistant">
+      <div class="chat-header"><div class="chat-avatar">T</div><div class="chat-heading"><strong>Trimzee assistant</strong><span><i></i> Here to help</span></div><button class="chat-close" id="chatClose" aria-label="Close chat">×</button></div>
+      <div class="chat-messages" id="chatMessages" aria-live="polite"><div class="chat-message bot-message">Hi! 👋 I can help with salon bookings, prices, cancellations, payments, or listing your salon. What do you need?</div></div>
+      <div class="chat-quick-replies" id="chatQuickReplies"><button type="button" data-chat-suggest="How do I book a salon?">Book a salon</button><button type="button" data-chat-suggest="What payment methods are available?">Payments</button><button type="button" data-chat-suggest="How can I cancel a booking?">Cancel booking</button></div>
+      <form class="chat-compose" id="chatForm"><input id="chatInput" type="text" placeholder="Type your question..." maxlength="500" autocomplete="off" aria-label="Type your support question" required><button type="submit" aria-label="Send message">↑</button></form>
+      <div class="chat-disclaimer">Automated demo assistant · No live agent connected</div>
+    </div>
+  </section>
   <script src="app.js"></script>
 </body>
 </html>
